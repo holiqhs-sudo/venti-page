@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { 
   Ticket, 
@@ -9,50 +10,82 @@ import {
 } from 'lucide-react';
 import { Feature } from '../types';
 
-const features: Feature[] = [
-  {
-    title: "Seamless Ticketing",
-    description: "Create multiple ticket tiers, early bird specials, and VIP packages in seconds with our intuitive builder.",
-    icon: Ticket
-  },
-  {
-    title: "Real-time Analytics",
-    description: "Track sales, page views, and conversion rates instantly. Know your audience before the event starts.",
-    icon: BarChart3
-  },
-  {
-    title: "Global Reach",
-    description: "Accept payments from anywhere in the world. We handle currency conversion and local tax compliance.",
-    icon: Globe
-  },
-  {
-    title: "Mobile First Experience",
-    description: "Attendees can buy tickets and check in using our sleek mobile app. No paper, no hassle.",
-    icon: Smartphone
-  },
-  {
-    title: "Secure Payments",
-    description: "Bank-grade security for all transactions. Payouts are automated and land in your account fast.",
-    icon: ShieldCheck
-  },
-  {
-    title: "AI Marketing Tools",
-    description: "Generate social media posts, email campaigns, and event descriptions automatically with Gemini AI.",
-    icon: Zap
-  }
-];
+interface FeaturesProps {
+  t: {
+    title: string;
+    subtitle: string;
+    aiPowered: {
+      title: string;
+      description: string;
+    };
+    easyToUse: {
+      title: string;
+      description: string;
+    };
+    securePayments: {
+      title: string;
+      description: string;
+    };
+    analytics: {
+      title: string;
+      description: string;
+    };
+    customization: {
+      title: string;
+      description: string;
+    };
+    integrations: {
+      title: string;
+      description: string;
+    };
+  };
+}
 
-const Features: React.FC = () => {
+const Features: React.FC<FeaturesProps> = ({ t }) => {
+
+  const features: Feature[] = [
+    {
+      title: t.aiPowered.title,
+      description: t.aiPowered.description,
+      icon: Zap
+    },
+    {
+      title: t.easyToUse.title,
+      description: t.easyToUse.description,
+      icon: Smartphone
+    },
+    {
+      title: t.securePayments.title,
+      description: t.securePayments.description,
+      icon: ShieldCheck
+    },
+    {
+      title: t.analytics.title,
+      description: t.analytics.description,
+      icon: BarChart3
+    },
+    {
+      title: t.customization.title,
+      description: t.customization.description,
+      icon: Globe
+    },
+    {
+      title: t.integrations.title,
+      description: t.integrations.description,
+      icon: Ticket
+    }
+  ];
+
   return (
     <section id="features" className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-brand-600 font-semibold tracking-wide uppercase text-sm">Why Choose Venti.id?</h2>
           <h3 className="mt-2 text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight">
-            Everything you need to host <br/> world-class events
+            {t.title}
           </h3>
           <p className="mt-4 text-xl text-slate-600">
-            Focus on creating an amazing experience. We'll handle the logistics, payments, and promotion technology.
+            {t.subtitle}
           </p>
         </div>
 

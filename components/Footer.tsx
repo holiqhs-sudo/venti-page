@@ -1,7 +1,18 @@
+
 import React from 'react';
 import { Zap, Twitter, Instagram, Linkedin, Facebook } from 'lucide-react';
 
-const Footer: React.FC = () => {
+interface FooterProps {
+  t: {
+    about: string;
+    contact: string;
+    privacy: string;
+    terms: string;
+    rights: string;
+  };
+}
+
+const Footer: React.FC<FooterProps> = ({ t }) => {
   return (
     <footer className="bg-slate-950 text-slate-400 py-12 border-t border-slate-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -40,7 +51,7 @@ const Footer: React.FC = () => {
             <h4 className="text-white font-semibold mb-4">Resources</h4>
             <ul className="space-y-2 text-sm">
               <li><a href="#" className="hover:text-brand-400 transition-colors">Blog</a></li>
-              <li><a href="#" className="hover:text-brand-400 transition-colors">Help Center</a></li>
+              <li><a href="#" className-="hover:text-brand-400 transition-colors">Help Center</a></li>
               <li><a href="#" className="hover:text-brand-400 transition-colors">Community</a></li>
               <li><a href="#" className="hover:text-brand-400 transition-colors">Developers</a></li>
             </ul>
@@ -49,16 +60,16 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="text-white font-semibold mb-4">Company</h4>
             <ul className="space-y-2 text-sm">
-              <li><a href="#" className="hover:text-brand-400 transition-colors">About</a></li>
-              <li><a href="#" className="hover:text-brand-400 transition-colors">Careers</a></li>
-              <li><a href="#" className="hover:text-brand-400 transition-colors">Legal</a></li>
-              <li><a href="#" className="hover:text-brand-400 transition-colors">Contact</a></li>
+              <li><a href="#" className="hover:text-brand-400 transition-colors">{t.about}</a></li>
+              <li><a href="#" className="hover:text-brand-400 transition-colors">{t.contact}</a></li>
+              <li><a href="#" className="hover:text-brand-400 transition-colors">{t.privacy}</a></li>
+              <li><a href="#" className="hover:text-brand-400 transition-colors">{t.terms}</a></li>
             </ul>
           </div>
         </div>
         
         <div className="pt-8 border-t border-slate-900 text-center text-xs">
-          <p>&copy; {new Date().getFullYear()} Venti.id. All rights reserved.</p>
+          <p>{t.rights}</p>
         </div>
       </div>
     </footer>
