@@ -1,7 +1,8 @@
 
 export const locales = {
   en: {
-    getStarted: "Get Started for Free",
+    getStarted: "Create Event",
+    downloadApp: "Download on Playstore",
     talkToSales: "Talk to Sales",
     readyToLaunch: "Ready to launch your next big event?",
     joinThousands: "Join thousands of organizers who use Venti.id to sell out fast.",
@@ -10,44 +11,45 @@ export const locales = {
       testimonials: "Testimonials",
       pricing: "Pricing",
       login: "Login",
-      signUp: "Sign Up for Free",
+      signUp: "Create Event",
     },
     hero: {
-      title: "The Easiest Way to Create & Sell Tickets for Your Events",
-      subtitle: "Venti.id is a comprehensive event management platform with AI-powered features to help you sell out your events faster.",
-      getStarted: "Get Started for Free",
+      title: "The Complete Event Management Solution",
+      subtitle: "Venti.id helps institutions and event organizers manage registration, ticketing, payments, attendance, and reporting in one structured and scalable system.",
+      getStarted: "Create Event",
+      downloadApp: "Download on Playstore",
     },
     features: {
-      title: "Everything You Need in One Platform",
-      subtitle: "Venti.id is packed with features to help you create, manage, and promote your events.",
+      title: "All-in-One Event Management",
+      subtitle: "Everything you need to host successful events, from start to finish.",
       aiPowered: {
-        title: "AI-Powered Features",
-        description: "Use our AI tools to generate event descriptions, social media posts, and email campaigns in seconds."
+        title: "Online Ticket Management",
+        description: "Sell your event tickets online with a simple and secure payment system.",
       },
       easyToUse: {
-        title: "Easy to Use",
-        description: "Our intuitive interface makes it easy for anyone to create and manage events without any technical expertise."
+        title: "Automatic Participant Registration",
+        description: "Simplify the registration process with an automated system that is easy for participants to use.",
       },
       securePayments: {
-        title: "Secure Payments",
-        description: "We use industry-standard encryption to protect your data and ensure secure transactions for you and your attendees."
+        title: "Digital Payment & QRIS",
+        description: "Accept various digital payment methods, including bank transfer, QRIS, and credit card, for faster and more secure transactions.",
       },
        analytics: {
-        title: "Advanced Analytics",
-        description: "Track your ticket sales, attendee demographics, and marketing efforts with our comprehensive analytics dashboard."
+        title: "Real-time Dashboard & Reports",
+        description: "Monitor ticket sales and participant data in real-time through a comprehensive dashboard.",
       },
       customization: {
-        title: "Customizable Pages",
-        description: "Create beautiful, on-brand event pages that look great on any device with our easy-to-use page builder."
+        title: "Custom Event Branding",
+        description: "Customize your event page with your own branding to create a professional impression.",
       },
       integrations: {
-        title: "Seamless Integrations",
-        description: "Connect Venti.id with your favorite tools like Mailchimp, Google Analytics, and Facebook Pixel to streamline your workflow."
+        title: "Strava Integration",
+        description: "Specifically for sports events, integrate with Strava to track participant activity.",
       }
     },
     testimonials: {
-      title: "Trusted by Top Organizers",
-      subtitle: "Join thousands of event creators who trust Venti.id to deliver seamless experiences.",
+      title: "Trusted by Institutions and Event Organizers",
+      subtitle: "See how Venti.id supports events across education, sports, and professional communities.",
       list: [
         {
           name: "Eduversal Charity Virtual Run & Gowes 2022",
@@ -135,20 +137,48 @@ export const locales = {
         }
       ]
     },
-    partners: {
-      title: "Our Awesome Partners",
-      subtitle: "We've partnered with the best companies in the industry to bring you a seamless event management experience."
+    highlightEvents: {
+        title: "Highlighted Events",
+        subtitle: "Discover exciting events hosted on Venti.id",
+        events: [
+            {
+                name: "FUN WALK & PERFORMANCES 2K26 - Cahaya Rancamaya IBS",
+                location: "Bogor, Indonesia",
+                thumbnail: "https://storage.venti.id//media/54/d0d87260edace561eb8bf5705.jpg"
+            },
+            {
+                name: 'ART PERFORMANCE 2026 "BEING AMAZING OF YOU" (GRADE 3-4)',
+                location: "Semarang, Indonesia",
+                thumbnail: "https://storage.venti.id//media/52/d0d87260edace561eb8bf5707.jpeg"
+            },
+            {
+                name: "Eduversal Charity Virtual Run 2026",
+                location: "Sport Event",
+                thumbnail: "https://storage.venti.id//media/47/11ea937816ca1f549a6ba5704.png"
+            },
+            {
+                name: "Centrum Travel Exhibition 2026",
+                location: "Jakarta Utara, Indonesia",
+                thumbnail: "https://storage.venti.id//media/55/8b555163a7099afe23d8ba10a.jpeg"
+            },
+            {
+                name: "Partfest Timur 2026 - Prestige Bilingual School Medan",
+                location: "Kab. Deli Serdang, Indonesia",
+                thumbnail: "https://storage.venti.id//media/60/8b555163a7099afe23d8ba10c.jpeg"
+            }
+        ]
     },
     footer: {
       about: "About Us",
       contact: "Contact",
       privacy: "Privacy Policy",
       terms: "Terms of Service",
-      rights: "© 2024 Venti.id. All rights reserved."
+      rights: "© 2026 Venti.id. All rights reserved."
     }
   },
   id: {
-    getStarted: "Mulai Gratis",
+    getStarted: "Buat Event",
+    downloadApp: "Unduh di Playstore",
     talkToSales: "Hubungi Tim Sales",
     readyToLaunch: "Siap untuk meluncurkan acaramu berikutnya?",
     joinThousands: "Bergabunglah dengan ribuan penyelenggara yang menggunakan Venti.id untuk menjual habis tiket dengan cepat.",
@@ -157,44 +187,45 @@ export const locales = {
       testimonials: "Testimoni",
       pricing: "Harga",
       login: "Masuk",
-      signUp: "Daftar Gratis",
+      signUp: "Buat Event",
     },
     hero: {
-      title: "Cara Termudah untuk Membuat & Menjual Tiket Acara Anda",
-      subtitle: "Venti.id adalah platform manajemen acara komprehensif dengan fitur bertenaga AI untuk membantu Anda menjual habis tiket acara lebih cepat.",
-      getStarted: "Mulai Gratis",
+      title: "Solusi Lengkap Manajemen Acara",
+      subtitle: "Venti.id membantu institusi dan penyelenggara event dalam mengelola registrasi, ticketing, pembayaran, kehadiran, serta pelaporan dalam satu sistem yang terstruktur dan scalable.",
+      getStarted: "Buat Event",
+      downloadApp: "Unduh di Playstore",
     },
     features: {
-      title: "Semua yang Anda Butuhkan dalam Satu Platform",
-      subtitle: "Venti.id dilengkapi dengan fitur-fitur untuk membantu Anda membuat, mengelola, dan mempromosikan acara Anda.",
+      title: "Manajemen Event Lengkap di Satu Tempat",
+      subtitle: "Semua yang Anda butuhkan untuk menyelenggarakan acara yang sukses, dari awal hingga akhir.",
       aiPowered: {
-        title: "Fitur Berbasis AI",
-        description: "Gunakan alat AI kami untuk menghasilkan deskripsi acara, postingan media sosial, dan kampanye email dalam hitungan detik."
+        title: "Manajemen Tiket Online",
+        description: "Jual tiket acaramu secara online dengan sistem pembayaran yang mudah dan aman.",
       },
       easyToUse: {
-        title: "Mudah Digunakan",
-        description: "Antarmuka intuitif kami memudahkan siapa saja untuk membuat dan mengelola acara tanpa keahlian teknis apa pun."
+        title: "Registrasi Peserta Otomatis",
+        description: "Sederhanakan proses pendaftaran dengan sistem otomatis yang mudah digunakan oleh peserta.",
       },
       securePayments: {
-        title: "Pembayaran Aman",
-        description: "Kami menggunakan enkripsi standar industri untuk melindungi data Anda dan memastikan transaksi yang aman bagi Anda dan peserta Anda."
+        title: "Pembayaran Digital & QRIS",
+        description: "Mendukung berbagai metode pembayaran digital, termasuk transfer bank, QRIS, dan kartu kredit, untuk transaksi yang lebih cepat dan aman",
       },
       analytics: {
-        title: "Analitik Tingkat Lanjut",
-        description: "Lacak penjualan tiket Anda, demografi peserta, dan upaya pemasaran dengan dasbor analitik kami yang komprehensif."
+        title: "Dashboard & Laporan Realtime",
+        description: "Pantau penjualan tiket dan data peserta secara real-time melalui dashboard yang komprehensif.",
       },
       customization: {
-        title: "Halaman yang Dapat Disesuaikan",
-        description: "Buat halaman acara yang indah dan sesuai merek yang terlihat bagus di perangkat apa pun dengan pembuat halaman kami yang mudah digunakan."
+        title: "Custom Branding Event",
+        description: "Sesuaikan halaman acaramu dengan branding sendiri untuk menciptakan kesan profesional.",
       },
       integrations: {
-        title: "Integrasi yang Mulus",
-        description: "Hubungkan Venti.id dengan alat favorit Anda seperti Mailchimp, Google Analytics, dan Facebook Pixel untuk menyederhanakan alur kerja Anda."
+        title: "Integrasi dengan Strava",
+        description: "Khusus untuk event olahraga, integrasikan dengan Strava untuk melacak aktivitas peserta.",
       }
     },
     testimonials: {
-      title: "Dipercaya oleh Penyelenggara Teratas",
-      subtitle: "Bergabunglah dengan ribuan pembuat acara yang mempercayai Venti.id untuk memberikan pengalaman yang mulus.",
+      title: "Dipercaya oleh Berbagai Institusi dan Penyelenggara Event",
+      subtitle: "Lihat testimoni bagaimana Venti.id mendukung penyelenggaraan event di bidang pendidikan, olahraga, dan komunitas profesional.",
       list: [
         {
           name: "Eduversal Charity Virtual Run & Gowes 2022",
@@ -282,16 +313,43 @@ export const locales = {
         }
       ]
     },
-    partners: {
-      title: "Mitra Luar Biasa Kami",
-      subtitle: "Kami telah bermitra dengan perusahaan terbaik di industri ini untuk memberikan Anda pengalaman manajemen acara yang mulus."
+    highlightEvents: {
+        title: "Event Unggulan",
+        subtitle: "Temukan acara menarik yang diselenggarakan di Venti.id",
+        events: [
+            {
+                name: "FUN WALK & PERFORMANCES 2K26 - Cahaya Rancamaya IBS",
+                location: "Bogor, Indonesia",
+                thumbnail: "https://storage.venti.id//media/54/d0d87260edace561eb8bf5705.jpg"
+            },
+            {
+                name: 'ART PERFORMANCE 2026 "BEING AMAZING OF YOU" (GRADE 3-4)',
+                location: "Semarang, Indonesia",
+                thumbnail: "https://storage.venti.id//media/52/d0d87260edace561eb8bf5707.jpeg"
+            },
+            {
+                name: "Eduversal Charity Virtual Run 2026",
+                location: "Acara Olahraga",
+                thumbnail: "https://storage.venti.id//media/47/11ea937816ca1f549a6ba5704.png"
+            },
+            {
+                name: "Centrum Travel Exhibition 2026",
+                location: "Jakarta Utara, Indonesia",
+                thumbnail: "https://storage.venti.id//media/55/8b555163a7099afe23d8ba10a.jpeg"
+            },
+            {
+                name: "Partfest Timur 2026 - Prestige Bilingual School Medan",
+                location: "Kab. Deli Serdang, Indonesia",
+                thumbnail: "https://storage.venti.id//media/60/8b555163a7099afe23d8ba10c.jpeg"
+            }
+        ]
     },
     footer: {
       about: "Tentang Kami",
       contact: "Kontak",
       privacy: "Kebijakan Privasi",
       terms: "Ketentuan Layanan",
-      rights: "© 2024 Venti.id. Semua hak dilindungi."
+      rights: "© 2026 Venti.id.  All rights reserved.."
     }
   }
 }

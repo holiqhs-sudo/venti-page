@@ -39,10 +39,10 @@ const Navbar: React.FC<NavbarProps> = ({ t, onLanguageChange }) => {
 
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
     e.preventDefault();
-    if (href === '#') {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    } else {
+    if (href.startsWith('#')) {
       document.querySelector(href)?.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      window.open(href, '_blank');
     }
     if (isMobileMenuOpen) {
       setIsMobileMenuOpen(false);
@@ -60,7 +60,7 @@ const Navbar: React.FC<NavbarProps> = ({ t, onLanguageChange }) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <div className="flex items-center">
-            <a href="#" className="flex items-center gap-2" onClick={(e) => handleNavClick(e, '#')}>
+            <a href="https://venti.id" target="_blank" className="flex items-center gap-2">
               <div className="bg-brand-600 p-2 rounded-lg">
                 <Zap className="h-6 w-6 text-white" />
               </div>
@@ -99,8 +99,8 @@ const Navbar: React.FC<NavbarProps> = ({ t, onLanguageChange }) => {
                 <Globe className={`w-4 h-4 absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none ${isScrolled ? 'text-slate-500' : 'text-slate-300'}`} />
               </div>
               <a
-                href="#pricing"
-                onClick={(e) => handleNavClick(e, '#pricing')}
+                href="https://venti.id/"
+                onClick={(e) => handleNavClick(e, 'https://venti.id/')}
                 className="bg-brand-600 hover:bg-brand-700 text-white px-5 py-2.5 rounded-full text-sm font-semibold transition-all shadow-lg hover:shadow-brand-500/30"
               >
                 {t.signUp}
@@ -135,9 +135,9 @@ const Navbar: React.FC<NavbarProps> = ({ t, onLanguageChange }) => {
               </a>
             ))}
             <a
-              href="#pricing"
+              href="https://venti.id/"
               className="bg-brand-600 text-white px-5 py-3 rounded-lg text-center font-semibold block"
-              onClick={(e) => handleNavClick(e, '#pricing')}
+              onClick={(e) => handleNavClick(e, 'https://venti.id/')}
             >
               {t.signUp}
             </a>
@@ -151,8 +151,8 @@ const Navbar: React.FC<NavbarProps> = ({ t, onLanguageChange }) => {
                   value={currentLanguage}
                   className="w-full appearance-none bg-white border border-slate-300 rounded-md py-2 px-3 text-slate-800"
                 >
-                  <option value="en">English</option>
                   <option value="id">Indonesian</option>
+                  <option value="en">English</option>  
                 </select>
                 <Globe className="w-5 h-5 absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none text-slate-400" />
               </div>

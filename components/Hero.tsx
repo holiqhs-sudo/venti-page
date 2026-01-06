@@ -1,16 +1,21 @@
 
 import React from 'react';
-import { ArrowRight, Calendar, Users, TrendingUp } from 'lucide-react';
+import { ArrowRight, Download } from 'lucide-react';
 
 interface HeroProps {
   t: {
     title: string;
     subtitle: string;
     getStarted: string;
+    downloadApp: string;
   }
 }
 
 const Hero: React.FC<HeroProps> = ({ t }) => {
+  const handleCTAClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault();
+    window.open(href, '_blank');
+  };
   return (
     <div className="relative bg-slate-900 pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
       {/* Background Abstract Shapes */}
@@ -22,10 +27,6 @@ const Hero: React.FC<HeroProps> = ({ t }) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="text-center lg:text-left animate-slide-up">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-900/50 border border-brand-700/50 text-brand-300 text-xs font-semibold uppercase tracking-wide mb-6">
-              <span className="w-2 h-2 rounded-full bg-brand-400 animate-pulse"></span>
-              The #1 Platform for Creators
-            </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight mb-6">
               {t.title}
             </h1>
@@ -34,32 +35,19 @@ const Hero: React.FC<HeroProps> = ({ t }) => {
             </p>
             <div className="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start">
               <a
-                href="#pricing"
+                href="https://venti.id/"
+                onClick={(e) => handleCTAClick(e, 'https://venti.id/')}
                 className="w-full sm:w-auto px-8 py-4 bg-brand-600 hover:bg-brand-500 text-white rounded-xl font-bold text-lg transition-all shadow-lg hover:shadow-brand-500/25 flex items-center justify-center gap-2"
               >
                 {t.getStarted} <ArrowRight className="h-5 w-5" />
               </a>
               <a
-                href="#ai-demo"
-                className="w-full sm:w-auto px-8 py-4 bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 hover:border-slate-600 rounded-xl font-semibold text-lg transition-all flex items-center justify-center"
+                href="https://play.google.com/store/apps/details?id=com.zerone.venti&pcampaignid=web_share"
+                onClick={(e) => handleCTAClick(e, 'https://play.google.com/store/apps/details?id=com.zerone.venti&pcampaignid=web_share')}
+                className="w-full sm:w-auto px-8 py-4 bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 hover:border-slate-600 rounded-xl font-semibold text-lg transition-all flex items-center justify-center gap-2"
               >
-                Try AI Tools
+                {t.downloadApp} <Download className="h-5 w-5" />
               </a>
-            </div>
-            
-            <div className="mt-10 flex items-center justify-center lg:justify-start gap-6 text-slate-500 text-sm font-medium">
-              <div className="flex items-center gap-2">
-                <Users className="h-4 w-4 text-brand-500" />
-                <span>10k+ Organizers</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Calendar className="h-4 w-4 text-brand-500" />
-                <span>50k+ Events</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <TrendingUp className="h-4 w-4 text-brand-500" />
-                <span>$2M+ Processed</span>
-              </div>
             </div>
           </div>
 

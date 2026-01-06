@@ -14,6 +14,12 @@ export interface Testimonial {
   content: string;
 }
 
+export interface HighlightEvent {
+  name: string;
+  location: string;
+  thumbnail: string;
+}
+
 export interface PricingPlan {
   name: string;
   price: string;
