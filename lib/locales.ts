@@ -47,7 +47,93 @@ export const locales = {
     },
     testimonials: {
       title: "Trusted by Top Organizers",
-      subtitle: "Join thousands of event creators who trust Venti.id to deliver seamless experiences."
+      subtitle: "Join thousands of event creators who trust Venti.id to deliver seamless experiences.",
+      list: [
+        {
+          name: "Eduversal Charity Virtual Run & Gowes 2022",
+          role: "Event Organizer",
+          company: "",
+          avatar: "https://picsum.photos/id/64/100/100",
+          content: "Venti was very helpful for our virtual run event. The integration with Strava went smoothly and made it easy for participants to record their activities. From the committee's perspective, managing participant data became neater and more trackable."
+        },
+        {
+          name: "Komodo Math Competition 2023",
+          role: "Event Organizer",
+          company: "",
+          avatar: "https://picsum.photos/id/91/100/100",
+          content: "The ticketing and payment process through Venti worked very well. Participants could register easily, and the committee could monitor transactions in real time."
+        },
+        {
+          name: "Webinar Festival Sains dan Budaya 2023",
+          role: "Event Organizer",
+          company: "",
+          avatar: "https://picsum.photos/id/129/100/100",
+          content: "Using Venti made the participant registration process more structured. The integrated payment system helped the event run smoothly with a large number of participants."
+        },
+        {
+          name: "Webinar Nasional Hari Perempuan Dunia",
+          role: "Event Organizer",
+          company: "",
+          avatar: "https://picsum.photos/id/145/100/100",
+          content: "Venti simplified the management of webinar registration and participant payments. The system was stable and helped the committee focus on the event's content."
+        },
+        {
+          name: "Komodo Webinar Series",
+          role: "Event Organizer",
+          company: "",
+          avatar: "https://picsum.photos/id/165/100/100",
+          content: "With Venti, managing the webinar series became more efficient. Ticketing and payments were centralized in one easy-to-use platform."
+        },
+        {
+          name: "Semua Membacanya 2025 – Majalah Mata Air",
+          role: "Event Organizer",
+          company: "",
+          avatar: "https://picsum.photos/id/168/100/100",
+          content: "Venti facilitated ticketing and payment management, and it was integrated with the required testing system. The platform was practical and supported our event's needs."
+        },
+        {
+          name: "Kindergarten Year End Performance 2025 – Sekolah Semesta",
+          role: "Event Organizer",
+          company: "",
+          avatar: "https://picsum.photos/id/170/100/100",
+          content: "Venti helped parents buy tickets easily and select seats. From the school's perspective, managing participant data became simpler."
+        },
+        {
+          name: "Playgroup Year End Performance 2025 – Sekolah Semesta",
+          role: "Event Organizer",
+          company: "",
+          avatar: "https://picsum.photos/id/171/100/100",
+          content: "The ticketing, payment, and seating system at Venti ran smoothly and facilitated communication between the committee and parents."
+        },
+        {
+          name: "Eduversal Charity Virtual Run & Ride 2025",
+          role: "Event Organizer",
+          company: "",
+          avatar: "https://picsum.photos/id/172/100/100",
+          content: "The integration of Strava, ticketing, and payments in Venti made our virtual event run more professionally and efficiently."
+        },
+        {
+          name: "Eduversal Charity Virtual Run 2026",
+          role: "Event Organizer",
+          company: "",
+          avatar: "https://picsum.photos/id/173/100/100",
+          content: "Venti was again the right solution for our virtual run event. The Strava integration, ticketing, and payment went smoothly from start to finish."
+        },
+        {
+          name: "STUDENT’S PERFORMANCE 2026 – Sekolah Semesta",
+          role: "Event Organizer",
+          company: "",
+          avatar: "https://picsum.photos/id/175/100/100",
+          content: "Venti helped manage ticket sales, payments, and seating arrangements neatly. The participant check-in process became more orderly and controlled."
+        },
+        {
+          name: "HARMONY OF THE PROPHET’S LOVE – Alumni SMA Pribadi Depok",
+          role: "Event Organizer",
+          company: "",
+          avatar: "https://picsum.photos/id/178/100/100",
+          content: "The ticketing and seating system at Venti was very helpful in managing attendance and seating for the event we organized."
+        }
+      ]
     },
     partners: {
       title: "Our Awesome Partners",
@@ -108,7 +194,93 @@ export const locales = {
     },
     testimonials: {
       title: "Dipercaya oleh Penyelenggara Teratas",
-      subtitle: "Bergabunglah dengan ribuan pembuat acara yang mempercayai Venti.id untuk memberikan pengalaman yang mulus."
+      subtitle: "Bergabunglah dengan ribuan pembuat acara yang mempercayai Venti.id untuk memberikan pengalaman yang mulus.",
+      list: [
+        {
+          name: "Eduversal Charity Virtual Run & Gowes 2022",
+          role: "Event Organizer",
+          company: "",
+          avatar: "https://picsum.photos/id/64/100/100",
+          content: "Venti sangat membantu pelaksanaan event virtual run kami. Integrasi dengan Strava berjalan lancar dan memudahkan peserta dalam mencatat aktivitas mereka. Dari sisi panitia, pengelolaan data peserta jadi lebih rapi dan terpantau."
+        },
+        {
+          name: "Komodo Math Competition 2023",
+          role: "Event Organizer",
+          company: "",
+          avatar: "https://picsum.photos/id/91/100/100",
+          content: "Proses ticketing dan pembayaran melalui Venti berjalan sangat baik. Peserta dapat mendaftar dengan mudah dan panitia dapat memantau transaksi secara real time."
+        },
+        {
+          name: "Webinar Festival Sains dan Budaya 2023",
+          role: "Event Organizer",
+          company: "",
+          avatar: "https://picsum.photos/id/129/100/100",
+          content: "Penggunaan Venti membuat proses pendaftaran peserta lebih terstruktur. Sistem pembayaran terintegrasi membantu kelancaran pelaksanaan event dengan jumlah peserta yang besar."
+        },
+        {
+          name: "Webinar Nasional Hari Perempuan Dunia",
+          role: "Event Organizer",
+          company: "",
+          avatar: "https://picsum.photos/id/145/100/100",
+          content: "Venti mempermudah pengelolaan pendaftaran dan pembayaran peserta webinar. Sistemnya stabil dan membantu panitia fokus pada konten acara."
+        },
+        {
+          name: "Komodo Webinar Series",
+          role: "Event Organizer",
+          company: "",
+          avatar: "https://picsum.photos/id/165/100/100",
+          content: "Dengan Venti, pengelolaan webinar series menjadi lebih efisien. Ticketing dan pembayaran terpusat dalam satu platform yang mudah digunakan."
+        },
+        {
+          name: "Semua Membacanya 2025 – Majalah Mata Air",
+          role: "Event Organizer",
+          company: "",
+          avatar: "https://picsum.photos/id/168/100/100",
+          content: "Venti memudahkan pengelolaan ticketing dan pembayaran, serta terintegrasi dengan sistem ujian yang dibutuhkan. Platformnya praktis dan mendukung kebutuhan event kami."
+        },
+        {
+          name: "Kindergarten Year End Performance 2025 – Sekolah Semesta",
+          role: "Event Organizer",
+          company: "",
+          avatar: "https://picsum.photos/id/170/100/100",
+          content: "Venti membantu orang tua membeli tiket dengan mudah dan memilih tempat duduk. Dari sisi sekolah, pengelolaan data peserta menjadi lebih sederhana."
+        },
+        {
+          name: "Playgroup Year End Performance 2025 – Sekolah Semesta",
+          role: "Event Organizer",
+          company: "",
+          avatar: "https://picsum.photos/id/171/100/100",
+          content: "Sistem ticketing, pembayaran, dan seating di Venti berjalan lancar dan memudahkan komunikasi antara panitia dan orang tua."
+        },
+        {
+          name: "Eduversal Charity Virtual Run & Ride 2025",
+          role: "Event Organizer",
+          company: "",
+          avatar: "https://picsum.photos/id/172/100/100",
+          content: "Integrasi Strava, ticketing, dan pembayaran dalam Venti membuat event virtual kami berjalan lebih profesional dan efisien."
+        },
+        {
+          name: "Eduversal Charity Virtual Run 2026",
+          role: "Event Organizer",
+          company: "",
+          avatar: "https://picsum.photos/id/173/100/100",
+          content: "Venti kembali menjadi solusi yang tepat untuk event virtual run kami. Integrasi Strava, ticketing, dan payment berjalan mulus dari awal hingga akhir."
+        },
+        {
+          name: "STUDENT’S PERFORMANCE 2026 – Sekolah Semesta",
+          role: "Event Organizer",
+          company: "",
+          avatar: "https://picsum.photos/id/175/100/100",
+          content: "Venti membantu pengelolaan penjualan tiket, pembayaran, dan seating dengan rapi. Proses check-in peserta menjadi lebih tertib dan terkontrol."
+        },
+        {
+          name: "HARMONY OF THE PROPHET’S LOVE – Alumni SMA Pribadi Depok",
+          role: "Event Organizer",
+          company: "",
+          avatar: "https://picsum.photos/id/178/100/100",
+          content: "Sistem ticketing dan seating di Venti sangat membantu pengaturan kehadiran dan tempat duduk peserta pada event yang kami selenggarakan."
+        }
+      ]
     },
     partners: {
       title: "Mitra Luar Biasa Kami",

@@ -9,7 +9,7 @@ import Footer from './components/Footer';
 import { locales } from './lib/locales';
 
 function App() {
-  const [language, setLanguage] = useState('en');
+  const [language, setLanguage] = useState('id');
 
   const handleLanguageChange = (lang: string) => {
     setLanguage(lang);

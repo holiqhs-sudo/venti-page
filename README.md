@@ -6,7 +6,7 @@
 
 This contains everything you need to run your app locally.
 
-View your app in AI Studio: https://ai.studio/apps/drive/15R2ftNKV45XThlmqAfpPGiijbYaZ6KKa
+View your app in AI Studio: https://9000-firebase-ventiid-1765008085371.cluster-zumahodzirciuujpqvsniawo3o.cloudworkstations.dev/?monospaceUid=179167&embedded=0
 
 ## Run Locally
 
