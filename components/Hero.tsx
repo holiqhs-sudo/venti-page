@@ -52,33 +52,11 @@ const Hero: React.FC<HeroProps> = ({ t }) => {
           </div>
 
           <div className="relative lg:block animate-fade-in">
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-slate-700 bg-slate-800">
-              <img 
-                src="https://picsum.photos/800/600" 
+             <img 
+                src="./lib/venti mockup modern.png" 
                 alt="Dashboard Preview" 
                 className="w-full h-auto object-cover opacity-90 hover:opacity-100 transition-opacity duration-500"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent flex items-end p-8">
-                <div className="bg-white/10 backdrop-blur-md p-4 rounded-xl border border-white/20 w-full max-w-sm">
-                  <div className="flex items-center gap-4 mb-3">
-                    <div className="h-10 w-10 rounded-full bg-brand-500 flex items-center justify-center text-white font-bold">
-                      JS
-                    </div>
-                    <div>
-                      <div className="text-white font-semibold">Jane's Tech Summit</div>
-                      <div className="text-brand-300 text-xs">Live Now • 1,240 Attendees</div>
-                    </div>
-                  </div>
-                  <div className="w-full bg-slate-700/50 rounded-full h-2 mb-2">
-                    <div className="bg-brand-500 h-2 rounded-full w-[85%]"></div>
-                  </div>
-                  <div className="flex justify-between text-xs text-slate-300">
-                    <span>Ticket Sales</span>
-                    <span>85% Sold</span>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
