@@ -1,6 +1,6 @@
 
-import React, { useState, useEffect } from 'react';
-import { Menu, X, Zap, Globe } from 'lucide-react';
+import React, { useState } from 'react';
+import { Menu, X, Globe } from 'lucide-react';
 
 interface NavbarProps {
   t: {
@@ -14,17 +14,8 @@ interface NavbarProps {
 }
 
 const Navbar: React.FC<NavbarProps> = ({ t, onLanguageChange }) => {
-  const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [currentLanguage, setCurrentLanguage] = useState('en');
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20);
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   const handleLanguageChange = (lang: string) => {
     onLanguageChange(lang);
@@ -51,22 +42,13 @@ const Navbar: React.FC<NavbarProps> = ({ t, onLanguageChange }) => {
 
   return (
     <nav
-      className={`fixed w-full z-50 transition-all duration-300 ${
-        isScrolled
-          ? 'bg-white/90 backdrop-blur-md shadow-md py-4'
-          : 'bg-transparent py-6'
-      }`}
+      className="fixed w-full z-50 transition-all duration-300 bg-white/90 backdrop-blur-md shadow-md py-4"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <div className="flex items-center">
             <a href="https://venti.id" target="_blank" className="flex items-center gap-2">
-              <div className="bg-brand-600 p-2 rounded-lg">
-                <Zap className="h-6 w-6 text-white" />
-              </div>
-              <span className={`text-2xl font-bold tracking-tight ${isScrolled ? 'text-slate-900' : 'text-white'}`}>
-                Venti<span className="text-brand-500">.id</span>
-              </span>
+              <img src="lib/logo venti id.png" alt="Venti.id Logo" className="h-8" />
             </a>
           </div>
 
@@ -77,9 +59,7 @@ const Navbar: React.FC<NavbarProps> = ({ t, onLanguageChange }) => {
                 key={link.name}
                 href={link.href}
                 onClick={(e) => handleNavClick(e, link.href)}
-                className={`text-sm font-medium transition-colors hover:text-brand-500 ${
-                  isScrolled ? 'text-slate-600' : 'text-slate-200'
-                }`}
+                className="text-sm font-medium transition-colors hover:text-brand-500 text-slate-600"
               >
                 {link.name}
               </a>
@@ -89,14 +69,12 @@ const Navbar: React.FC<NavbarProps> = ({ t, onLanguageChange }) => {
                 <select
                   onChange={(e) => handleLanguageChange(e.target.value)}
                   value={currentLanguage}
-                  className={`appearance-none bg-transparent border rounded-full py-2 pl-4 pr-8 text-sm font-medium transition-colors hover:text-brand-500 ${
-                    isScrolled ? 'border-slate-300 text-slate-600' : 'border-slate-400 text-slate-200'
-                  }`}
+                  className="appearance-none bg-transparent border rounded-full py-2 pl-4 pr-8 text-sm font-medium transition-colors hover:text-brand-500 border-slate-300 text-slate-600"
                 >
                   <option value="en" className="text-slate-800">EN</option>
                   <option value="id" className="text-slate-800">ID</option>
                 </select>
-                <Globe className={`w-4 h-4 absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none ${isScrolled ? 'text-slate-500' : 'text-slate-300'}`} />
+                <Globe className="w-4 h-4 absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none text-slate-500" />
               </div>
               <a
                 href="https://venti.id/"
@@ -112,7 +90,7 @@ const Navbar: React.FC<NavbarProps> = ({ t, onLanguageChange }) => {
           <div className="md:hidden flex items-center">
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className={`p-2 rounded-md ${isScrolled ? 'text-slate-900' : 'text-white'}`}
+              className="p-2 rounded-md text-slate-900"
             >
               {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>
@@ -152,7 +130,7 @@ const Navbar: React.FC<NavbarProps> = ({ t, onLanguageChange }) => {
                   className="w-full appearance-none bg-white border border-slate-300 rounded-md py-2 px-3 text-slate-800"
                 >
                   <option value="id">Indonesian</option>
-                  <option value="en">English</option>  
+                 finless<option value="en">English</option>  
                 </select>
                 <Globe className="w-5 h-5 absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none text-slate-400" />
               </div>

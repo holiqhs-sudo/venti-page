@@ -147,11 +147,6 @@ export const locales = {
                 thumbnail: "https://storage.venti.id//media/54/d0d87260edace561eb8bf5705.jpg"
             },
             {
-                name: 'ART PERFORMANCE 2026 "BEING AMAZING OF YOU" (GRADE 3-4)',
-                location: "Semarang, Indonesia",
-                thumbnail: "https://storage.venti.id//media/52/d0d87260edace561eb8bf5707.jpeg"
-            },
-            {
                 name: "Eduversal Charity Virtual Run 2026",
                 location: "Sport Event",
                 thumbnail: "https://storage.venti.id//media/47/11ea937816ca1f549a6ba5704.png"
@@ -321,11 +316,6 @@ export const locales = {
                 name: "FUN WALK & PERFORMANCES 2K26 - Cahaya Rancamaya IBS",
                 location: "Bogor, Indonesia",
                 thumbnail: "https://storage.venti.id//media/54/d0d87260edace561eb8bf5705.jpg"
-            },
-            {
-                name: 'ART PERFORMANCE 2026 "BEING AMAZING OF YOU" (GRADE 3-4)',
-                location: "Semarang, Indonesia",
-                thumbnail: "https://storage.venti.id//media/52/d0d87260edace561eb8bf5707.jpeg"
             },
             {
                 name: "Eduversal Charity Virtual Run 2026",

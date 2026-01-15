@@ -45,8 +45,8 @@ function App() {
                 {t.getStarted}
               </a>
               <a
-                href="https://venti.id/"
-                onClick={(e) => handleCTAClick(e, 'https://venti.id/')}
+                href="https://zerone.id/"
+                onClick={(e) => handleCTAClick(e, 'https://zerone.id/')}
                 className="bg-brand-700 text-white border border-brand-500 hover:bg-brand-800 px-8 py-4 rounded-xl font-bold text-lg shadow-lg transition-transform hover:-translate-y-1 block"
               >
                 {t.talkToSales}
